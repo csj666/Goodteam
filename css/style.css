@@ -195,3 +195,139 @@ header {
   color: #d58ca1;
   text-align: center;
 }
+
+section {
+  flex: 1;
+  background-color: green;
+  overflow: scroll;
+  font-size: 0.4rem;
+}
+
+section .top {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  overflow: hidden;
+}
+
+section .top .mark {
+  overflow: hidden;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .top .mark ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 1.2rem;
+  align-content: space-between;
+  align-items: center;
+}
+
+section .top .mark ul li {
+  font-size: 0.45333rem;
+  padding: 0 0.26667rem;
+  flex-shrink: 0;
+  line-height: 1.2rem;
+}
+
+section .title {
+  width: 100%;
+  height: 1.46667rem;
+  font-size: 0.45333rem;
+  line-height: 1.46667rem;
+}
+
+section .title .pa {
+  float: left;
+  margin-left: 0.26667rem;
+}
+
+section .title .ps {
+  float: right;
+  margin-right: 0.26667rem;
+}
+
+section .listsection {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+section .listsection .section {
+  width: 100%;
+  height: auto;
+  padding: 0.26667rem;
+  box-sizing: border-box;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+section .listsection .section dl {
+  width: 50%;
+}
+
+section .listsection .section dl dd {
+  height: 0.88rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+section .listsection .section dl dd b {
+  color: #d58ca1;
+  font-size: 0.37333rem;
+}
+
+section .listsection .section dl dd span {
+  text-decoration: line-through;
+}
+
+section .active {
+  border-bottom: 0.05333rem solid #c2c2c2;
+  color: pink;
+}
+
+section ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 100%;
+  align-items: center;
+}
+
+section ul li {
+  flex: 1;
+  padding-bottom: 0.4rem;
+}
+
+section ul li img {
+  display: block;
+  margin: 0 auto;
+  width: 2.4rem;
+}
+
+.one {
+  width: 100%;
+  height: 3.2rem;
+}
+
+.b span {
+  width: 0.26667rem;
+  height: 0.26667rem;
+}
