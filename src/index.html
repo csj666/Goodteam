@@ -151,6 +151,19 @@
 
     </div>
     <script src="../js/swiper-4.1.6.min.js"></script>
+    <script>
+        var Better = new BScroll('.mark', {
+            click: true,
+            scrollX: true,
+            probeType: 3
+        })
+        var mySwiper = new Swiper('.one', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            } //可选选项，自动滑动
+        })
+    </script>
 </body>
 
 </html>

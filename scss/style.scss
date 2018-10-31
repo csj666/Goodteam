@@ -77,6 +77,11 @@ section {
     }
 }
 
+.swiper-pagination-bullet {
+    width: pxTorem(10px);
+    height: pxTorem(10px);
+}
+
 .one {
     width: 100%;
     height: pxTorem(120px);
