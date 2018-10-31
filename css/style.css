@@ -251,3 +251,57 @@ section .title .ps {
   float: right;
   margin-right: 0.26667rem;
 }
+
+.active {
+  border-bottom: 0.05333rem solid #c2c2c2;
+  color: pink;
+}
+
+.slides {
+  font-size: 0.4rem;
+}
+
+.slides ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 100%;
+  align-items: center;
+}
+
+.slides ul li {
+  flex: 1;
+  padding-bottom: 0.4rem;
+}
+
+.slides ul li img {
+  display: block;
+  margin: 0 auto;
+  width: 2.4rem;
+}
+
+.one {
+  width: 100%;
+  height: 3.2rem;
+}
+
+.b span {
+  width: 0.26667rem;
+  height: 0.26667rem;
+}
+
+.uls {
+  padding-top: 0.53333rem;
+}
+
+.uls li {
+  float: left;
+  padding: 0.4rem;
+}
+
+.uls li img {
+  display: block;
+  margin: 0 auto;
+  width: 4rem;
+}

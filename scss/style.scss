@@ -53,3 +53,49 @@ section {
         }
     }
 }
+
+.active {
+    border-bottom: pxTorem(2px) solid #c2c2c2;
+    color: pink;
+}
+
+.slides {
+    font-size: pxTorem(15px);
+    ul {
+        @include box_flex;
+        height: 100%;
+        align-items: center;
+        li {
+            flex: 1;
+            padding-bottom: pxTorem(15px);
+            img {
+                display: block;
+                margin: 0 auto;
+                width: pxTorem(90px);
+            }
+        }
+    }
+}
+
+.one {
+    width: 100%;
+    height: pxTorem(120px);
+}
+
+.b span {
+    width: pxTorem(10px);
+    height: pxTorem(10px);
+}
+
+.uls {
+    padding-top: pxTorem(20px);
+    li {
+        float: left;
+        padding: pxTorem(15px);
+        img {
+            display: block;
+            margin: 0 auto;
+            width: pxTorem(150px);
+        }
+    }
+}
