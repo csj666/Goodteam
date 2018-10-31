@@ -138,19 +138,28 @@ section {
 }
 
 footer {
+    flex-shrink: 0;
     width: 100%;
-    height: pxTorem(50px);
+    height: pxTorem(44px);
     @include box_flex;
-    dl {
-        width: 20%;
-        text-align: center;
-        height: pxTorem(50px);
-        align-items: center;
-        justify-content: center;
+    ul {
+        width: 100%;
         @include box_flex;
-        @include direction(column);
-        .icon {
-            font-size: pxTorem(19px);
+        li {
+            @include flex;
+            @include box_flex;
+            @include direction(column);
+            @include align;
+            @include justify;
+            color: #2b3439;
+            span {
+                i.iconfont {
+                    font-size: pxTorem(18px);
+                }
+            }
+        }
+        .active {
+            color: yellow;
         }
     }
 }

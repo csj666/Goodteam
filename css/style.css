@@ -356,28 +356,43 @@ section .title .ps {
 }
 
 footer {
+  flex-shrink: 0;
   width: 100%;
-  height: 1.33333rem;
+  height: 1.17333rem;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
   /* NEW - Chrome */
 }
 
-footer dl {
-  width: 20%;
-  text-align: center;
-  height: 1.33333rem;
-  align-items: center;
-  justify-content: center;
+footer ul {
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+footer ul li {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
   /* NEW - Chrome */
   -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #2b3439;
 }
 
-footer dl .icon {
-  font-size: 0.50667rem;
+footer ul li span i.iconfont {
+  font-size: 0.48rem;
+}
+
+footer ul .active {
+  color: yellow;
 }
