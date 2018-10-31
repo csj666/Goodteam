@@ -195,3 +195,59 @@ header {
   color: #d58ca1;
   text-align: center;
 }
+
+section {
+  flex: 1;
+  background-color: green;
+  overflow: scroll;
+}
+
+section .top {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  overflow: hidden;
+}
+
+section .top .mark {
+  overflow: hidden;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .top .mark ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 1.2rem;
+  align-content: space-between;
+  align-items: center;
+}
+
+section .top .mark ul li {
+  font-size: 0.45333rem;
+  padding: 0 0.26667rem;
+  flex-shrink: 0;
+  line-height: 1.2rem;
+}
+
+section .title {
+  width: 100%;
+  height: 1.46667rem;
+  font-size: 0.45333rem;
+  line-height: 1.46667rem;
+}
+
+section .title .pa {
+  float: left;
+  margin-left: 0.26667rem;
+}
+
+section .title .ps {
+  float: right;
+  margin-right: 0.26667rem;
+}

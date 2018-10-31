@@ -13,3 +13,43 @@ header {
     color: #d58ca1;
     text-align: center;
 }
+
+section {
+    flex: 1;
+    background-color: green;
+    overflow: scroll;
+    .top {
+        @include box_flex;
+        overflow: hidden;
+        .mark {
+            overflow: hidden;
+            @include box_flex;
+            ul {
+                @include box_flex;
+                height: pxTorem(45px);
+                align-content: space-between;
+                align-items: center;
+                li {
+                    font-size: pxTorem(17px);
+                    padding: 0 pxTorem(10px);
+                    flex-shrink: 0;
+                    line-height: pxTorem(45px);
+                }
+            }
+        }
+    }
+    .title {
+        width: 100%;
+        height: pxTorem(55px);
+        font-size: pxTorem(17px);
+        line-height: pxTorem(55px);
+        .pa {
+            float: left;
+            margin-left: pxTorem(10px);
+        }
+        .ps {
+            float: right;
+            margin-right: pxTorem(10px);
+        }
+    }
+}
