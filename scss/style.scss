@@ -136,3 +136,21 @@ section {
         }
     }
 }
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    dl {
+        width: 20%;
+        text-align: center;
+        height: pxTorem(50px);
+        align-items: center;
+        justify-content: center;
+        @include box_flex;
+        @include direction(column);
+        .icon {
+            font-size: pxTorem(19px);
+        }
+    }
+}

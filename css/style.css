@@ -354,3 +354,30 @@ section .title .ps {
 .listsection .section dl dd span {
   text-decoration: line-through;
 }
+
+footer {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+footer dl {
+  width: 20%;
+  text-align: center;
+  height: 1.33333rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+footer dl .icon {
+  font-size: 0.50667rem;
+}
