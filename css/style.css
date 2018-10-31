@@ -185,12 +185,7 @@ html {
 .wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  background: pink;
 }
 
 header {
@@ -202,153 +197,118 @@ header {
 }
 
 section {
-  width: 100%;
-  -webkit-flex: 1 1 0%;
-  flex: 1 1 0%;
+  flex: 1;
+  background-color: green;
+  overflow: scroll;
+}
+
+section .top {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   overflow: hidden;
 }
 
-section .toplist {
-  width: 100%;
-  height: 1.2rem;
+section .top .mark {
   overflow: hidden;
-}
-
-section .toplist .top {
-  width: 38.4rem;
-  height: 1.2rem;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
   /* NEW - Chrome */
 }
 
-section .toplist .top li {
-  width: 2.4rem;
+section .top .mark ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 1.2rem;
+  align-content: space-between;
+  align-items: center;
+}
+
+section .top .mark ul li {
+  font-size: 0.45333rem;
+  padding: 0 0.26667rem;
   flex-shrink: 0;
   line-height: 1.2rem;
-  font-size: 0.42667rem;
-  text-align: center;
 }
 
-section .toplist .top li:nth-child(1) {
-  color: #d58ca1;
-  border-bottom: 0.05333rem solid #d58ca1;
+section .title {
+  width: 100%;
+  height: 1.46667rem;
+  font-size: 0.45333rem;
+  line-height: 1.46667rem;
 }
 
-section .page {
-  bottom: -7px !important;
+section .title .pa {
+  float: left;
+  margin-left: 0.26667rem;
 }
 
-section .swiper-pagination-bullet {
+section .title .ps {
+  float: right;
+  margin-right: 0.26667rem;
+}
+
+.active {
+  border-bottom: 0.05333rem solid #c2c2c2;
+  color: pink;
+}
+
+.slides {
+  font-size: 0.4rem;
+}
+
+.slides ul {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  height: 100%;
+  align-items: center;
+}
+
+.slides ul li {
+  flex: 1;
+  padding-bottom: 0.4rem;
+}
+
+.slides ul li img {
+  display: block;
+  margin: 0 auto;
+  width: 2.4rem;
+}
+
+.swiper-pagination-bullet {
   width: 0.26667rem;
   height: 0.26667rem;
 }
 
-section .p {
+.one {
   width: 100%;
-  height: 1.33333rem;
-  padding: 0.26667rem;
-  box-sizing: border-box;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  align-items: center;
+  height: 3.2rem;
 }
 
-section .p b {
-  font-size: 0.45333rem;
+.b span {
+  width: 0.26667rem;
+  height: 0.26667rem;
 }
 
-section .p span {
-  color: #ccc;
-  font-size: 0.37333rem;
+.uls {
+  padding-top: 0.53333rem;
 }
 
-section .box {
-  width: 100%;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  padding: 0.26667rem;
-  box-sizing: border-box;
+.uls li {
+  float: left;
+  padding: 0.4rem;
 }
 
-section .box dl dt {
-  text-align: center;
-}
-
-section .box dl dt img {
-  width: 70%;
-}
-
-section .box dl dd {
-  height: 0.88rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-section .box dl dd b {
-  color: #d58ca1;
-  font-size: 0.37333rem;
-}
-
-section .box dl dd span {
-  text-decoration: line-through;
-}
-
-section .center p {
-  width: 100%;
-  height: 1.33333rem;
-  padding: 0.26667rem;
-  box-sizing: border-box;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  font-size: 0.37333rem;
-}
-
-footer {
-  width: 100%;
-  height: 1.33333rem;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-}
-
-footer dl {
-  width: 20%;
-  text-align: center;
-  height: 1.33333rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-footer dl .icon {
-  font-size: 0.50667rem;
+.uls li img {
+  display: block;
+  margin: 0 auto;
+  width: 4rem;
 }
 
 .listsection {
