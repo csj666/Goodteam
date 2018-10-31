@@ -5,3 +5,30 @@
     height: 100%;
     background: pink;
 }
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    height: pxTorem(44px);
+    @include box_flex;
+    ul {
+        width: 100%;
+        @include box_flex;
+        li {
+            @include flex;
+            @include box_flex;
+            @include direction(column);
+            @include align;
+            @include justify;
+            color: #2b3439;
+            span {
+                i.iconfont {
+                    font-size: pxTorem(18px);
+                }
+            }
+        }
+        .active {
+            color: pink;
+        }
+    }
+}
