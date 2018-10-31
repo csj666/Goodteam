@@ -188,6 +188,14 @@ html {
   background: pink;
 }
 
+header {
+  width: 100%;
+  line-height: 1.2rem;
+  font-size: 0.53333rem;
+  color: #d58ca1;
+  text-align: center;
+}
+
 footer {
   flex-shrink: 0;
   width: 100%;
