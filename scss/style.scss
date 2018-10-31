@@ -5,3 +5,11 @@
     height: 100%;
     background: pink;
 }
+
+header {
+    width: 100%;
+    line-height: pxTorem(45px);
+    font-size: pxTorem(20px);
+    color: #d58ca1;
+    text-align: center;
+}
